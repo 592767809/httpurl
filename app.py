@@ -14,6 +14,10 @@ class Item(BaseModel):
     other: dict
 
 
+@app.get("")
+def index():
+    return {"message": "Hello World"}
+
 @app.post("/url")
 def psst_url(item: Item):
     _kwargs = dict()
