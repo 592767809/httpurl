@@ -14,7 +14,7 @@ class Item(BaseModel):
     other: dict
 
 
-@app.get("")
+@app.get("/")
 def index():
     return {"message": "Hello World"}
 
